@@ -1,21 +1,12 @@
 ---
-title: OpenAtlas Discovery
+title: Moving Byzantium
 navigation: false
 image:
-  light: /assets/images/logo-with-text-light.svg
-  dark: /assets/images/logo-with-text-dark.svg
-leadIn: >-
-  OpenAtlas Discovery is a presentation site template for a database system
-  called OpenAtlas that is used by various Digital Humanities projects from
-  different domains. Researchers can easily enter and manage their data in
-  OpenAtlas and can then setup a presentation site using OpenAtlas Discovery
-  that already provides customizable visualizations for their data.\
-
-  OpenAtlas Discovery is fully open-source and downloadable via **[GitHub](https://github.com/acdh-oeaw/openatlas-discovery)**. \
-
-  \
-
-  **Explore our visualizations here:**
+  light: /assets/images/Moving_Byzantium_Logo.jpg
+  dark: /assets/images/Moving_Byzantium_Logo.jpg
+leadIn:
+  "[Moving Byzantium](https://rapp.univie.ac.at/)-Atlas on migration and mobility in the Byzantine
+  Empire and beyond. (experimental version)"
 links:
   - label: Data table
     href: /visualization?mode=table
@@ -24,6 +15,15 @@ links:
   - label: Network
     href: /visualization?mode=network
 ---
-The data presented in this demo version is kindly provided by: [Mapping Medieval Conflict (MEDCON)](https://www.oeaw.ac.at/imafo/das-institut/detail/mapping-medieval-conflicts). A digital approach towards political dynamics in the pre-modern period.
 
-The data stems from two of MEDCON´s case studies, “Emperor Frederick III and the League of the Mailberger coalition in 1451/52” (executed by Kornelia Holzner-Tobisch and Petra Heinicker) and “Factions and alliances in the fight of Maximilian I for Burgundy” (Sonja Dünnebeil).
+THANADOS (The Anthropological and Archaeological Database of Sepultures) deals with the digital
+collection and presentation of Early Medieval cemeteries in the area of present day Austria.
+
+Within THANADOS hitherto published information on Early Medieval burials was digitized and
+translated to English language. The data are mapped using the CIDOC CRM and provided online. The
+information can be explored via a digital catalogue and within an interactive map. Cartographic
+visualisations as well as charts and plots are created dynamically based on real archaeological
+research data.
+
+It aims at providing a best practice way on how to disseminate archaeological sources and research
+in the 21st century against the background of digital humanities.

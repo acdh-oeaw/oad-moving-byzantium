@@ -2,21 +2,11 @@
 title: OpenAtlas Discovery
 navigation: false
 image:
-  light: /assets/images/logo-with-text-light.svg
-  dark: /assets/images/logo-with-text-dark.svg
-leadIn: >-
-  OpenAtlas Discovery ist ein Template für eine Präsentationswebsite des
-  Datenbanksystems OpenAtlas, das von verschiedenen Digital Humanities Projekten
-  aus unterschiedlichen Bereichen genutzt wird. Forscher:innen können ihre Daten
-  ganz einfach in OpenAtlas eingeben und verwalten und anschließend mit
-  OpenAtlas Discovery eine Präsentationsseite einrichten, die bereits anpassbare
-  Visualisierungen für ihre Daten bereitstellt.\
-
-  OpenAtlas Discovery ist vollständig Open Source und kann über **[GitHub](https://github.com/acdh-oeaw/openatlas-discovery)** heruntergeladen werden.\
-
-  \
-
-  **Entdecken Sie unsere Visualisierungen hier:**
+  light: /assets/images/Moving_Byzantium_Logo.jpg
+  dark: /assets/images/Moving_Byzantium_Logo.jpg
+leadIn:
+  "[Moving Byzantium](https://rapp.univie.ac.at/)-Atlas der Migration und Mobilität im
+  Byzantinischen Reich und seinen Nachbarn (Testversion)"
 links:
   - label: Datentabelle
     href: /visualization?mode=table
@@ -25,6 +15,15 @@ links:
   - label: Netzwerk
     href: /visualization?mode=network
 ---
-Die Daten, die in dieser Demo-Version präsentiert werden, wurden freundlicherweise bereitgestellt von: [Mapping Medieval Conflict (MEDCON)](https://www.oeaw.ac.at/imafo/das-institut/detail/mapping-medieval-conflicts). A digital approach towards political dynamics in the pre-modern period.
 
-Die Daten stammen aus zwei Fallstudien von MEDCON, „Kaiser Friedrich III. und die Liga der Mailberger Koalition, 1451/52“ (durchgeführt durch Kornelia Holzner-Tobisch und Petra Heinicker) und „Fraktionen und Allianzen im Kampf von Maximilian I. um Burgund“ (Sonja Dünnebeil).
+THANADOS (Die Anthropologische und Archäologische Datenbank von Sepulturen) beschäftigt sich mit der
+digitalen Sammlung und Darstellung frühmittelalterlicher Friedhöfe im heutigen Österreich.
+
+Innerhalb von THANADOS wurden bisher veröffentlichte Informationen zu frühmittelalterlichen
+Bestattungen digitalisiert und ins Englische übersetzt. Die Daten werden unter Verwendung des CIDOC
+CRM kartiert und online bereitgestellt. Die Informationen können über einen digitalen Katalog und
+eine interaktive Karte erkundet werden. Kartografische Visualisierungen sowie Diagramme und Grafiken
+werden dynamisch auf Basis realer archäologischer Forschungsdaten erstellt.
+
+Ziel ist es, einen Best-Practice-Ansatz zur Verbreitung archäologischer Quellen und Forschung im 21.
+Jahrhundert im Kontext der digitalen Geisteswissenschaften zu bieten.
