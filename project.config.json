@@ -1,101 +1,110 @@
 {
-	"logos": {
-		"light": "/assets/images/Moving_Byzantium_Logo.jpg",
-		"dark": "/assets/images/Moving_Byzantium_Logo.jpg",
-		"withTextLight": "/assets/images/Moving_Byzantium_Logo.jpg",
-		"withTextDark": "/assets/images/Moving_Byzantium_Logo.jpg"
-	},
-	"imprint": "acdh",
-	"network": {
-		"excludeSystemClasses": [
-			"type",
-			"reference_system",
-			"source_translation",
-			"bibliography",
-			"external_reference",
-			"administrative_unit",
-			"edition",
-			"type_tools",
-			"file",
-			"appellation"
-		]
-	},
-	"colors": {
-		"brand": "#b8cf5b",
-		"geojsonPoints": "#69c0ef",
-		"geojsonAreaCenterPoints": "#b8cf5b",
-		"geojsonMovement": "#D0031E"
-	},
-	"twitter": "",
-	"detailView": [
-		{
-			"primarySystemClasses": [
-				"acquisition",
-				"activity",
-				"actor_function",
-				"actor_relation",
-				"appellation",
-				"artifact",
-				"creation",
-				"event",
-				"feature",
-				"group",
-				"human_remains",
-				"involvement",
-				"modification",
-				"move",
-				"person",
-				"production",
-				"source",
-				"source_translation",
-				"stratigraphic_unit",
-				"place"
-			],
-			"furtherSystemClasses": ["files", "externalReferenceSystems", "references"],
-			"affectedSystemClasses": [
-				"acquisition",
-				"activity",
-				"actor_function",
-				"actor_relation",
-				"appellation",
-				"artifact",
-				"creation",
-				"event",
-				"feature",
-				"group",
-				"human_remains",
-				"involvement",
-				"modification",
-				"move",
-				"person",
-				"production",
-				"source",
-				"source_translation",
-				"stratigraphic_unit",
-				"place",
-				"type"
-			],
-			"customOrdering": [],
-			"excludeTypeIds": []
-		}
-	],
-	"footer": {
-		"partner_logos": []
-	},
-	"fullscreen": true,
-	"defaultLocale": "en",
-	"map": {
-		"startPage": false,
-		"mapDisplayedSystemClasses": ["place", "feature"],
-		"customIconConfig": [],
-		"customMovementConfig": {
-			"colorConfig": [],
-			"arcThickness": false
-		},
-		"flyToZoom": 20,
-		"baseLayerURL": {
-			"light": "https://basemaps.cartocdn.com/gl/positron-gl-style/style.json",
-			"dark": "https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json"
-		}
-	}
+  "logos": {
+    "light": "/assets/images/Moving_Byzantium_Logo.jpg",
+    "dark": "/assets/images/Moving_Byzantium_Logo.jpg",
+    "withTextLight": "/assets/images/Moving_Byzantium_Logo.jpg",
+    "withTextDark": "/assets/images/Moving_Byzantium_Logo.jpg"
+  },
+  "imprint": "acdh",
+  "network": {
+    "excludeSystemClasses": [
+      "type",
+      "reference_system",
+      "source_translation",
+      "source",
+      "bibliography",
+      "external_reference",
+      "administrative_unit",
+      "edition",
+      "type_tools",
+      "file",
+      "appellation"
+    ]
+  },
+  "colors": {
+    "brand": "#b8cf5b",
+    "geojsonPoints": "#69c0ef",
+    "geojsonAreaCenterPoints": "#b8cf5b",
+    "geojsonMovement": "#D0031E"
+  },
+  "twitter": "",
+  "detailView": [
+    {
+      "primarySystemClasses": [
+        "acquisition",
+        "activity",
+        "actor_function",
+        "actor_relation",
+        "appellation",
+        "artifact",
+        "creation",
+        "event",
+        "feature",
+        "group",
+        "human_remains",
+        "involvement",
+        "modification",
+        "move",
+        "person",
+        "production",
+        "source",
+        "source_translation",
+        "stratigraphic_unit",
+        "place"
+      ],
+      "furtherSystemClasses": [
+        "files",
+        "externalReferenceSystems",
+        "references"
+      ],
+      "affectedSystemClasses": [
+        "acquisition",
+        "activity",
+        "actor_function",
+        "actor_relation",
+        "appellation",
+        "artifact",
+        "creation",
+        "event",
+        "feature",
+        "group",
+        "human_remains",
+        "involvement",
+        "modification",
+        "move",
+        "person",
+        "production",
+        "source",
+        "source_translation",
+        "stratigraphic_unit",
+        "place",
+        "type"
+      ],
+      "customOrdering": [],
+      "excludeTypeIds": []
+    }
+  ],
+  "footer": {
+    "partner_logos": []
+  },
+  "fullscreen": true,
+  "defaultLocale": "en",
+  "map": {
+    "startPage": false,
+    "mapDisplayedSystemClasses": [
+      "place",
+      "feature",
+      "artifact"
+    ],
+    "customIconConfig": [],
+    "customMovementConfig": {
+      "colorConfig": [],
+      "arcThickness": false
+    },
+    "flyToZoom": 20,
+    "baseLayerURL": {
+      "light": "https://basemaps.cartocdn.com/gl/positron-gl-style/style.json",
+      "dark": "https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json"
+    }
+  }
 }
