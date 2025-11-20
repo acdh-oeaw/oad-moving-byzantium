@@ -19,6 +19,7 @@ const types = computed(() => {
 	// all subtypes of currentType
 	// @ts-expect-error wrong in OpenAPI schema, see https://redmine.openatlas.eu/issues/2625
 	const subTypes = Object.values(data.value?.typeTree).filter((el) => {
+		//@ts-expect-error wrong in swagger (typeTree vs type_tree)
 		return currentType.subs.includes(el.id);
 	});
 

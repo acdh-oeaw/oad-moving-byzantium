@@ -218,15 +218,20 @@ const filteredTypes = computed(() => {
 
 const { data: typeData } = useGetTypeDistribution();
 const typeTree = computed(() => {
+	//@ts-expect-error wrong in swagger (typeTree vs type_tree)
 	if (!typeData.value) return {} as TypeTreeModel["typeTree"];
+	//@ts-expect-error wrong in swagger (typeTree vs type_tree)
 	return typeData.value.typeTree;
 });
 
 const superTypes: typeof filteredTypes = computed(() => {
+	//@ts-expect-error wrong in swagger (typeTree vs type_tree)
 	const currentType = typeTree.value[String(props.entity.id) as keyof TypeTreeModel["typeTree"]];
 
 	if (!currentType) return [];
+	//@ts-expect-error wrong in swagger (typeTree vs type_tree)
 	const hierarchy = currentType.root.map((entry) => {
+		//@ts-expect-error wrong in swagger (typeTree vs type_tree)
 		return typeTree.value[String(entry) as keyof TypeTreeModel["typeTree"]];
 	});
 	const directParent = hierarchy.pop();
@@ -237,6 +242,7 @@ const superTypes: typeof filteredTypes = computed(() => {
 			id: directParent.id,
 			isStandard: directParent.category === "standard",
 			title: directParent.name,
+			//@ts-expect-error wrong in swagger (typeTree vs type_tree)
 			typeHierarchy: hierarchy.map((e) => {
 				return { ...e, identifier: String(e.id), label: e.name };
 			}),
