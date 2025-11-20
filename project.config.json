@@ -30,6 +30,21 @@
   "twitter": "",
   "detailView": [
     {
+      "affectedSystemClasses": [
+        "place"
+      ],
+      "primarySystemClasses": [
+        "source",
+        "artifact"
+      ],
+      "customOrdering": [],
+      "furtherSystemClasses": [
+        "files",
+        "references"
+      ],
+      "excludeTypeIds": []
+    },
+    {
       "primarySystemClasses": [
         "acquisition",
         "activity",
@@ -81,56 +96,6 @@
         "type"
       ],
       "customOrdering": [],
-      "excludeTypeIds": []
-    },
-    {
-      "affectedSystemClasses": [
-        "place"
-      ],
-      "primarySystemClasses": [
-        "source",
-        "artifact"
-      ],
-      "customOrdering": [],
-      "furtherSystemClasses": [
-        "files",
-        "references"
-      ],
-      "excludeTypeIds": []
-    },
-    {
-      "affectedSystemClasses": [
-        "place"
-      ],
-      "primarySystemClasses": [
-        "acquisition",
-        "activity",
-        "actor_function",
-        "actor_relation",
-        "appellation",
-        "artifact",
-        "creation",
-        "event",
-        "feature",
-        "files",
-        "group",
-        "human_remains",
-        "involvement",
-        "modification",
-        "move",
-        "person",
-        "place",
-        "production",
-        "references",
-        "source",
-        "source_translation",
-        "stratigraphic_unit"
-      ],
-      "customOrdering": [],
-      "furtherSystemClasses": [
-        "files",
-        "references"
-      ],
       "excludeTypeIds": []
     }
   ],
