@@ -100,7 +100,20 @@
     }
   ],
   "footer": {
-    "partner_logos": []
+    "partner_logos": [
+      {
+        "name": "FWF",
+        "light": "/assets/images/fwf_logo.png",
+        "url": "https://www.fwf.ac.at/",
+        "dark": "/assets/images/fwf_logo.png"
+      },
+      {
+        "name": "Epigraphies of Pious Travel",
+        "url": "https://www.oeaw.ac.at/en/byzanz/gesellschaft-und-landschaft/epigraphik/epigraphies-of-pious-travel",
+        "light": "/assets/images/pious_travel.png",
+        "dark": "/assets/images/pious_travel.png"
+      }
+    ]
   },
   "fullscreen": true,
   "defaultLocale": "en",
