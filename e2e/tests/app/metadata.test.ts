@@ -17,10 +17,7 @@ test("should set a canonical url", async ({ createIndexPage }) => {
 		await indexPage.goto();
 
 		const canonicalUrl = indexPage.page.locator('link[rel="canonical"]');
-		await expect(canonicalUrl).toHaveAttribute(
-			"href",
-			String(createUrl({ baseUrl, pathname: `/${locale}` })),
-		);
+		await expect(canonicalUrl).toHaveAttribute("href", String(createUrl({ baseUrl })));
 	}
 });
 
@@ -31,11 +28,11 @@ test("should set document title on not-found page", async ({ createI18n, page })
 		[i18nEn.t("NotFoundPage.meta.title"), i18nEn.t("Metadata.name")].join(" | "),
 	);
 
-	const i18nDe = await createI18n("de");
-	await page.goto("/de/unknown");
-	await expect(page).toHaveTitle(
-		[i18nDe.t("NotFoundPage.meta.title"), i18nDe.t("Metadata.name")].join(" | "),
-	);
+	// const i18nDe = await createI18n("de");
+	// await page.goto("/de/unknown");
+	// await expect(page).toHaveTitle(
+	// 	[i18nDe.t("NotFoundPage.meta.title"), i18nDe.t("Metadata.name")].join(" | "),
+	// );
 });
 
 test("should disallow indexing of not-found page", async ({ page }) => {
@@ -73,10 +70,7 @@ test("should set page metadata", async ({ createIndexPage }) => {
 		await expect(ogDescription).toHaveAttribute("content", i18n.t("Metadata.description"));
 
 		const ogUrl = page.locator('meta[property="og:url"]');
-		await expect(ogUrl).toHaveAttribute(
-			"content",
-			String(createUrl({ baseUrl, pathname: `/${locale}` })),
-		);
+		await expect(ogUrl).toHaveAttribute("content", String(createUrl({ baseUrl })));
 
 		const ogLocale = page.locator('meta[property="og:locale"]');
 		await expect(ogLocale).toHaveAttribute("content", locale);

@@ -3,9 +3,9 @@ import { locales } from "@/config/i18n.config";
 
 const currentLocale = useLocale();
 const t = useTranslations();
-const switchLocalePath = useSwitchLocalePath();
+// const switchLocalePath = useSwitchLocalePath();
 const { setLocale } = useI18n();
-const route = useRoute();
+// const route = useRoute();
 const labels = computed(() => {
 	return new Intl.DisplayNames([currentLocale.value], { type: "language" });
 });
@@ -42,7 +42,7 @@ const labels = computed(() => {
 	</div>
 
 	<div class="hidden items-center gap-2 lg:flex">
-		<template v-for="(locale, index) of locales" :key="locale">
+		<!-- <template v-for="(locale, index) of locales" :key="locale">
 			<span v-if="index !== 0" class="opacity-80">|</span>
 
 			<NuxtLink
@@ -61,7 +61,7 @@ const labels = computed(() => {
 					{{ t("LocaleSwitcher.current-locale", { locale: labels.of(locale) }) }}
 				</span>
 				<span aria-hidden="true">{{ locale.toUpperCase() }}</span>
-			</span>
-		</template>
+			</span> 
+		</template> -->
 	</div>
 </template>

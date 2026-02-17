@@ -1,138 +1,122 @@
 {
-  "logos": {
-    "light": "/assets/images/Moving_Byzantium_Logo.jpg",
-    "dark": "/assets/images/Moving_Byzantium_Logo.jpg",
-    "withTextLight": "/assets/images/Moving_Byzantium_Logo.jpg",
-    "withTextDark": "/assets/images/Moving_Byzantium_Logo.jpg"
-  },
-  "imprint": "acdh",
-  "network": {
-    "excludeSystemClasses": [
-      "type",
-      "reference_system",
-      "source_translation",
-      "source",
-      "bibliography",
-      "external_reference",
-      "administrative_unit",
-      "edition",
-      "type_tools",
-      "file",
-      "appellation"
-    ]
-  },
-  "colors": {
-    "brand": "#b8cf5b",
-    "geojsonPoints": "#69c0ef",
-    "geojsonAreaCenterPoints": "#b8cf5b",
-    "geojsonMovement": "#D0031E"
-  },
-  "twitter": "",
-  "detailView": [
-    {
-      "affectedSystemClasses": [
-        "place"
-      ],
-      "primarySystemClasses": [
-        "source",
-        "artifact"
-      ],
-      "customOrdering": [],
-      "furtherSystemClasses": [
-        "files",
-        "references"
-      ],
-      "excludeTypeIds": []
-    },
-    {
-      "primarySystemClasses": [
-        "acquisition",
-        "activity",
-        "actor_function",
-        "actor_relation",
-        "appellation",
-        "artifact",
-        "creation",
-        "event",
-        "feature",
-        "group",
-        "human_remains",
-        "involvement",
-        "modification",
-        "move",
-        "person",
-        "production",
-        "source",
-        "source_translation",
-        "stratigraphic_unit",
-        "place"
-      ],
-      "furtherSystemClasses": [
-        "files",
-        "externalReferenceSystems",
-        "references"
-      ],
-      "affectedSystemClasses": [
-        "acquisition",
-        "activity",
-        "actor_function",
-        "actor_relation",
-        "appellation",
-        "artifact",
-        "creation",
-        "event",
-        "feature",
-        "group",
-        "human_remains",
-        "involvement",
-        "modification",
-        "move",
-        "person",
-        "production",
-        "source",
-        "source_translation",
-        "stratigraphic_unit",
-        "place",
-        "type"
-      ],
-      "customOrdering": [],
-      "excludeTypeIds": []
-    }
-  ],
-  "footer": {
-    "partner_logos": [
-      {
-        "name": "FWF",
-        "light": "/assets/images/fwf_logo.png",
-        "url": "https://www.fwf.ac.at/",
-        "dark": "/assets/images/fwf_logo.png"
-      },
-      {
-        "name": "Epigraphies of Pious Travel",
-        "url": "https://www.oeaw.ac.at/en/byzanz/gesellschaft-und-landschaft/epigraphik/epigraphies-of-pious-travel",
-        "light": "/assets/images/pious_travel.png",
-        "dark": "/assets/images/pious_travel.png"
-      }
-    ]
-  },
-  "fullscreen": true,
-  "defaultLocale": "en",
-  "map": {
-    "startPage": false,
-    "mapDisplayedSystemClasses": [
-      "place",
-      "feature",
-      "artifact"
-    ],
-    "customIconConfig": [],
-    "customMovementConfig": {
-      "colorConfig": [],
-      "arcThickness": false
-    },
-    "flyToZoom": 20,
-    "baseLayerURL": {
-      "light": "https://basemaps.cartocdn.com/gl/positron-gl-style/style.json",
-      "dark": "https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json"
-    }
-  }
+	"logos": {
+		"light": "/assets/images/Moving_Byzantium_Logo.jpg",
+		"dark": "/assets/images/Moving_Byzantium_Logo.jpg",
+		"withTextLight": "/assets/images/Moving_Byzantium_Logo.jpg",
+		"withTextDark": "/assets/images/Moving_Byzantium_Logo.jpg"
+	},
+	"imprint": "acdh",
+	"network": {
+		"excludeSystemClasses": [
+			"type",
+			"reference_system",
+			"source_translation",
+			"source",
+			"bibliography",
+			"external_reference",
+			"administrative_unit",
+			"edition",
+			"type_tools",
+			"file",
+			"appellation"
+		]
+	},
+	"colors": {
+		"brand": "#b8cf5b",
+		"geojsonPoints": "#69c0ef",
+		"geojsonAreaCenterPoints": "#b8cf5b",
+		"geojsonMovement": "#D0031E"
+	},
+	"twitter": "",
+	"detailView": [
+		{
+			"affectedSystemClasses": ["place"],
+			"primarySystemClasses": ["source", "artifact"],
+			"customOrdering": [],
+			"furtherSystemClasses": ["files", "references"],
+			"excludeTypeIds": []
+		},
+		{
+			"primarySystemClasses": [
+				"acquisition",
+				"activity",
+				"actor_function",
+				"actor_relation",
+				"appellation",
+				"artifact",
+				"creation",
+				"event",
+				"feature",
+				"group",
+				"human_remains",
+				"involvement",
+				"modification",
+				"move",
+				"person",
+				"production",
+				"source",
+				"source_translation",
+				"stratigraphic_unit",
+				"place"
+			],
+			"furtherSystemClasses": ["files", "externalReferenceSystems", "references"],
+			"affectedSystemClasses": [
+				"acquisition",
+				"activity",
+				"actor_function",
+				"actor_relation",
+				"appellation",
+				"artifact",
+				"creation",
+				"event",
+				"feature",
+				"group",
+				"human_remains",
+				"involvement",
+				"modification",
+				"move",
+				"person",
+				"production",
+				"source",
+				"source_translation",
+				"stratigraphic_unit",
+				"place",
+				"type"
+			],
+			"customOrdering": [],
+			"excludeTypeIds": []
+		}
+	],
+	"footer": {
+		"partner_logos": [
+			{
+				"name": "FWF",
+				"light": "/assets/images/fwf_logo.png",
+				"url": "https://www.fwf.ac.at/",
+				"dark": "/assets/images/fwf_logo.png"
+			},
+			{
+				"name": "Epigraphies of Pious Travel",
+				"url": "https://www.oeaw.ac.at/en/byzanz/gesellschaft-und-landschaft/epigraphik/epigraphies-of-pious-travel",
+				"light": "/assets/images/pious_travel.png",
+				"dark": "/assets/images/pious_travel.png"
+			}
+		]
+	},
+	"fullscreen": true,
+	"defaultLocale": "en",
+	"map": {
+		"startPage": false,
+		"mapDisplayedSystemClasses": ["place", "feature", "artifact"],
+		"customIconConfig": [],
+		"customMovementConfig": {
+			"colorConfig": [],
+			"arcThickness": false
+		},
+		"flyToZoom": 20,
+		"baseLayerURL": {
+			"light": "https://basemaps.cartocdn.com/gl/positron-gl-style/style.json",
+			"dark": "https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json"
+		}
+	}
 }
