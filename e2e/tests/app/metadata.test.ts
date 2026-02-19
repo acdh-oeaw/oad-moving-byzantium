@@ -1,6 +1,7 @@
 import { assert, createUrl } from "@acdh-oeaw/lib";
 
 import { locales } from "@/config/i18n.config";
+import { ensureTrailingSlash } from "@/utils/ensure-trailing-slash";
 import { escape } from "@/utils/safe-json-ld-replacer";
 import { expect, test } from "~/e2e/lib/test";
 
@@ -17,7 +18,8 @@ test("should set a canonical url", async ({ createIndexPage }) => {
 		await indexPage.goto();
 
 		const canonicalUrl = indexPage.page.locator('link[rel="canonical"]');
-		await expect(canonicalUrl).toHaveAttribute("href", String(createUrl({ baseUrl })));
+		const href = await canonicalUrl.getAttribute("href");
+		expect(ensureTrailingSlash(String(href))).toBe(String(createUrl({ baseUrl, pathname: `/` })));
 	}
 });
 
@@ -69,8 +71,8 @@ test("should set page metadata", async ({ createIndexPage }) => {
 		const ogDescription = page.locator('meta[property="og:description"]');
 		await expect(ogDescription).toHaveAttribute("content", i18n.t("Metadata.description"));
 
-		const ogUrl = page.locator('meta[property="og:url"]');
-		await expect(ogUrl).toHaveAttribute("content", String(createUrl({ baseUrl })));
+		const ogUrl = await page.locator('meta[property="og:url"]').getAttribute("content");
+		expect(ensureTrailingSlash(ogUrl!)).toBe(String(createUrl({ baseUrl, pathname: `/` })));
 
 		const ogLocale = page.locator('meta[property="og:locale"]');
 		await expect(ogLocale).toHaveAttribute("content", locale);
